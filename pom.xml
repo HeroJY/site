@@ -9,7 +9,7 @@
 	<packaging>war</packaging>
 
 	<name>yanweitong</name>
-	<description>Demo project for Spring Boot</description>
+	<description>All about Me</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
