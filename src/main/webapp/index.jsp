@@ -7,7 +7,7 @@
 <body bgcolor="#f5f5dc">
 <div>
 </div>
-<hr color="purple">
+<hr color="white">
 <div>
     <div style="text-align: center">
         <h2>Hi</h2>
