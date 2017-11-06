@@ -8,26 +8,8 @@
 <jsp:include page="${contextPath}/WEB-INF/views/common/base.jsp"/>
 
 <html>
-
 <body>
-<div>
-    <hr color="white">
-</div>
 
-<div>
-    <div style="text-align: center">
-        <h2>Home</h2>
-
-    </div>
-</div>
-<div style="text-align: center;margin-left: 35%;margin-right: 35%">
-    <hr color="white">
-</div>
-<div>
-    <div style="text-align: center">
-
-    </div>
-</div>
 
 </body>
 </html>
