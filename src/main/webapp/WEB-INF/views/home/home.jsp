@@ -1,9 +1,14 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: weitongyan
+  Date: 06/11/2017
+  Time: 14:42
+  To change this template use File | Settings | File Templates.
+--%>
+<jsp:include page="${contextPath}/WEB-INF/views/common/base.jsp"/>
 
-<jsp:include page="WEB-INF/views/common/base.jsp"/>
 <html>
-<head>
 
-</head>
 <body>
 <div>
     <hr color="white">
@@ -11,7 +16,7 @@
 
 <div>
     <div style="text-align: center">
-        <h2 onclick="window.location.href='/home'">Hi</h2>
+        <h2>Home</h2>
 
     </div>
 </div>
