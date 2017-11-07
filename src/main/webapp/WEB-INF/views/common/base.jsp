@@ -44,10 +44,10 @@
     </div>
 </div>
 
-<div class="footer" style="text-align: right">
-    <hr color="white">
-    <h4>java_js_tomcat_centos_jenkins_mysql,all by tim.</h4>
-</div>
+<%--<div class="footer" style="text-align: right">--%>
+    <%--<hr color="white">--%>
+    <%--<h4>java_js_tomcat_centos_jenkins_mysql,all by tim.</h4>--%>
+<%--</div>--%>
 </body>
 </html>
 
