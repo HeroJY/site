@@ -1,7 +1,8 @@
-package com.yanweitong.controller.tim;
+package com.yanweitong.controller.me;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * TimController
@@ -11,6 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/me")
-public class TimController {  
-    
+public class MeController {
+
+    @RequestMapping("")
+    public ModelAndView me(){
+        return new ModelAndView("/me/me","me",null);
+    }
+
 }
