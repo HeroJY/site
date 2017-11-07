@@ -15,6 +15,7 @@
 <style type="text/css">
     h2{color: darkgoldenrod}
     h3{color: coral;display: inline}
+    h4{color: darksalmon}
 </style>
 <html>
 <HEAD>
@@ -30,17 +31,22 @@
         <h2>Hello Traveller</h2>
     </div>
 </div>
-<div style="text-align: center;margin-left: 35%;margin-right: 35%">
+<div style="text-align: center;margin-left: 30%;margin-right: 30%">
     <hr color="white">
 </div>
 <div>
     <div style="text-align: center">
         <div>
-            <%--<h3 onmouseover="this.style.color='green'" onmouseleave="this.style.color='coral'" onclick="window.location.href='/home'" style="margin-right: 7%">Y</h3>--%>
-            <%--<h3 onmouseover="this.style.color='green'" onmouseleave="this.style.color='coral'" onclick="window.location.href='/visitor'" >W</h3>--%>
-            <%--<h3 onmouseover="this.style.color='green'" onmouseleave="this.style.color='coral'" onclick="window.location.href='/me'" style="margin-left: 7%">T</h3>--%>
+            <h3 onmouseover="this.style.color='green'" onmouseleave="this.style.color='coral'" onclick="window.location.href='/home'" style="margin-right: 7%">Home</h3>
+            <h3 onmouseover="this.style.color='green'" onmouseleave="this.style.color='coral'" onclick="window.location.href='/you'" >You</h3>
+            <h3 onmouseover="this.style.color='green'" onmouseleave="this.style.color='coral'" onclick="window.location.href='/me'" style="margin-left: 7%">Me</h3>
         </div>
     </div>
+</div>
+
+<div class="footer" style="text-align: right">
+    <hr color="white">
+    <h4>java_js_tomcat_centos_jenkins_mysql,all by tim.</h4>
 </div>
 </body>
 </html>

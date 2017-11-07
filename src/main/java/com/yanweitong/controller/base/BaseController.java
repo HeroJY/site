@@ -17,6 +17,9 @@ public class BaseController {
 
     @RequestMapping("")
     public ModelAndView indexPage(HttpServletRequest request){
+        System.out.println("Request URI: "+request.getRequestURI());
+        System.out.println("Remote host: "+request.getRemoteHost());
+        System.out.println("Remote User"+request.getRemoteUser());
 
         return new ModelAndView("index","index",null);
     }

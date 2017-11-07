@@ -8,7 +8,7 @@
 <jsp:include page="${contextPath}/WEB-INF/views/common/base.jsp"/>
 <html>
 <head>
-    <title>Title</title>
+    <title>You</title>
 </head>
 <body>
 
