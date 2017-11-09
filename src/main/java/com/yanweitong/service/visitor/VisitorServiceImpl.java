@@ -25,27 +25,22 @@ public class VisitorServiceImpl implements VisitorService {
 
     @Override
     public void save(VisitorVO vo) {
+
         Visitor visitor = new Visitor(vo);
 
         //判断是否已有此IP记录，执行更新或新增
-        List<String> ips = visitorRepository.getIps();
-        //判断数据库中有无数据
-        if(ips.isEmpty()){
+        Visitor oldVisitor = visitorRepository.findByIp(vo.getIp());
+        //
+        if(oldVisitor==null){
+            //新增
             visitor.setTotalLoginNumber(1);
             visitor.setId(idService.nextId());
             visitorRepository.save(visitor);
         }else {
-            for(String str : ips){
-                if(vo.getIp().equals(str)){
-                    Visitor oldVisitor = visitorRepository.findByIp(str);
-                    oldVisitor.setTotalLoginNumber(oldVisitor.getTotalLoginNumber()+1);
-                    visitorRepository.save(oldVisitor);
-                }else {
-                    visitor.setTotalLoginNumber(1);
-                    visitor.setId(idService.nextId());
-                    visitorRepository.save(visitor);
-                }
-            }
+            //更新
+            oldVisitor.setTotalLoginNumber(oldVisitor.getTotalLoginNumber()+1);
+            oldVisitor.setLastLoginTime(visitor.getLastLoginTime());
+            visitorRepository.save(oldVisitor);
         }
 
     }
